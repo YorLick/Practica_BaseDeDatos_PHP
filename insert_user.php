@@ -12,5 +12,6 @@ $query = mysqli_query($con, $sql);
 if($query){
  Header("Location: index.php");
 }else{
+    echo "Error: " . mysqli_error($con);
 }
 ?>

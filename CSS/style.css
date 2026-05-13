@@ -7,20 +7,32 @@ html {
   font-family: "Segoe UI", sans-serif;
   text-align: center;
 }
+
 a {
   text-decoration: none;
 }
 .users-form form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
-  width: 30%;
+  width: 90%;
+  max-width: 1200px;
   margin: 20px auto;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .users-form form input {
   font-family: "Segoe UI", sans-serif;
 }
+.users-form form input[type="text"],
+.users-form form input[type="password"],
+.users-form form input[type="email"] {
+  min-width: 180px;
+  max-width: 240px;
+}
+
 .users-form form input[type="text"],
 .users-form form input[type="password"],
 .users-form form input[type="email"] {
